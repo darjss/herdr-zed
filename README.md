@@ -10,7 +10,7 @@ Two triggers:
 ## Install
 
 ```sh
-herdr plugin install darjs/herdr-zed
+herdr plugin install darjss/herdr-zed
 ```
 
 Or link a local checkout:
