@@ -5,6 +5,9 @@ min_herdr_version = "0.7.0"
 description = "Open the focused folder in Zed. Remote machine folders open over SSH via zeditor ssh://."
 platforms = ["linux", "macos"]
 
+[[startup]]
+command = ["sh", "-c", "setsid -f ./zd-listen.sh"]
+
 [[actions]]
 id = "open"
 title = "zed: open folder"
