@@ -1,0 +1,18 @@
+id = "darjs.zed-open"
+name = "zed-open"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "Open the focused folder in Zed. Remote machine folders open over SSH via zeditor ssh://."
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "open"
+title = "zed: open folder"
+contexts = ["global", "workspace", "tab", "pane"]
+command = ["sh", "zed-open.sh"]
+
+[[link_handlers]]
+id = "zd"
+title = "Open in Zed"
+pattern = "^zed-remote://"
+action = "open"
